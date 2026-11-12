@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al-Noor Academy | Islamic Studies & Holy Quran Reading</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="loading">
+  <!-- Preloader / Section Transition Loading Screen -->
+  <div id="preloader" class="preloader" aria-label="Loading Al-Noor Academy">
+    <div class="loader-wrapper">
+      <div class="spinner-ring outer-ring"></div>
+      <div class="spinner-ring inner-ring"></div>
+      <div class="quran-center">
+        <img
+          src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=400&q=80"
+          alt="Holy Quran Majeed"
+        />
+      </div>
+    </div>
+    <p class="loader-arabic" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+    <p class="loader-text" id="loaderText">Loading Al-Noor Academy...</p>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo nav-trigger" data-target="home" data-title="Loading Home Page...">
+        <span class="arabic-brand">النور</span>
+        <span>Al-Noor Academy</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">&#9776;</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-trigger active-nav" data-target="home" data-title="Loading Home Page...">Home</a>
+        <a href="#courses" class="nav-trigger" data-target="courses" data-title="Loading Courses Page...">Courses</a>
+        <a href="#team" class="nav-trigger" data-target="team" data-title="Loading Team Page...">Our Team</a>
+        <a href="#gallery" class="nav-trigger" data-target="gallery" data-title="Loading Quran Gallery...">Quran Gallery</a>
+        <a href="#schedule" class="nav-trigger" data-target="schedule" data-title="Loading Timings Page...">Timings</a>
+        <a href="#contact" class="nav-trigger" data-target="contact" data-title="Loading Contact Page...">Contact</a>
+        <a href="#enroll" class="btn btn-primary nav-trigger" data-target="enroll" data-title="Loading Free Trial Registration...">Free Trial</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Page Container (Single Active View Per Selection) -->
+  <main id="pageContainer">
+    <!-- HOME SECTION (Richly expanded with Allah SWT, Rasoolullah SAW, and Holy Quran content & cards) -->
+    <div id="home" class="page-section active-section">
+      <!-- 1. Hero Banner -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+            <h1>Illuminate Your Heart with the Holy Quran &amp; Islamic Knowledge</h1>
+            <p class="hero-subtitle">
+              One-on-one online and on-campus classes in Tajweed, Hifz, Qaida, and foundational Islamic Studies for children and adults.
+            </p>
+            <div class="hero-actions">
+              <a href="#enroll" class="btn btn-primary nav-trigger" data-target="enroll" data-title="Loading Free Trial Registration...">Book a Free Trial Class</a>
+              <a href="#courses" class="btn btn-outline nav-trigger" data-target="courses" data-title="Loading Courses Page...">Explore Courses</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>1-on-1</strong>
+                <span>Live Sessions</span>
+              </div>
+              <div>
+                <strong>Certified</strong>
+                <span>Male &amp; Female Tutors</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Flexible Timings</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image-card">
+            <img
+              src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=900&q=80"
+              alt="Open Holy Quran on a wooden rehal stand"
+            />
+            <div class="verse-badge">
+              <p lang="ar" dir="rtl">وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا</p>
+              <span>"And recite the Quran with measured recitation." (Surah Al-Muzzammil 73:4)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Three Sacred Pillars Overview Cards (Allah SWT, Rasoolullah SAW, The Holy Quran) -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="tag">Foundations of Faith</span>
+            <h2>Cornerstones of Our Sacred Knowledge</h2>
+            <p>Nurturing love for Allah Almighty, devotion to His Final Messenger (&#65018;), and lifelong connection with the Noble Quran.</p>
+          </div>
+
+          <div class="sacred-pillars-grid">
+            <!-- Card 1: Allah SWT -->
+            <article class="sacred-card">
+              <div class="sacred-arabic-header" lang="ar" dir="rtl">اللَّهُ جَلَّ جَلَالُهُ</div>
+              <h3>Knowing Allah (&#65019;)</h3>
+              <p class="sacred-quote-ar" lang="ar" dir="rtl">هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ ۖ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۖ هُوَ الرَّحْمَٰنُ الرَّحِيمُ</p>
+              <p class="sacred-translation">
+                "He is Allah, other than whom there is no deity, Knower of the unseen and the witnessed. He is the Entirely Merciful, the Especially Merciful." — <em>Surah Al-Hashr (59:22)</em>
+              </p>
+              <p class="sacred-desc">
+                True wisdom begins with Tawheed—recognizing the Oneness, Mercy, Majesty, and Perfection of our Creator, relying upon Him in every step of life.
+              </p>
+            </article>
+
+            <!-- Card 2: Rasoolullah SAW -->
+            <article class="sacred-card featured-gold">
+              <div class="sacred-arabic-header" lang="ar" dir="rtl">مُحَمَّدٌ رَسُولُ اللَّهِ ﷺ</div>
+              <h3>His Beloved Messenger (&#65018;)</h3>
+              <p class="sacred-quote-ar" lang="ar" dir="rtl">وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ</p>
+              <p class="sacred-translation">
+                "And We have not sent you, [O Muhammad], except as a mercy to the worlds." — <em>Surah Al-Anbiya (21:107)</em>
+              </p>
+              <p class="sacred-desc">
+                Prophet Muhammad (peace and blessings be upon him) is the ultimate guide of character, compassion, truthfulness, and living Sunnah for all humanity.
+              </p>
+            </article>
+
+            <!-- Card 3: The Holy Quran -->
+            <article class="sacred-card">
+              <div class="sacred-arabic-header" lang="ar" dir="rtl">الْقُرْآنُ الْكَرِيمُ</div>
+              <h3>The Noble Quran</h3>
+              <p class="sacred-quote-ar" lang="ar" dir="rtl">إِنَّ هَٰذَا الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ</p>
+              <p class="sacred-translation">
+                "Indeed, this Quran guides to that which is most suitable and gives good tidings to the believers..." — <em>Surah Al-Isra (17:9)</em>
+              </p>
+              <p class="sacred-desc">
+                The eternal, preserved Word of Allah—a healing for hearts, light for the soul, and clear guidance from darkness into light.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Asma-ul-Husna (Beautiful Names of Allah SWT) -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="tag">Asma-ul-Husna</span>
+            <h2>Reflect Upon the Beautiful Names of Allah (&#65019;)</h2>
+            <p>"And to Allah belong the best names, so invoke Him by them." — Surah Al-A'raf (7:180)</p>
+          </div>
+
+          <div class="asma-grid">
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الرَّحْمَٰنُ</span>
+              <h4>Ar-Rahman</h4>
+              <p>The Most Merciful — Whose boundless mercy encompasses all creation.</p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الرَّحِيمُ</span>
+              <h4>Ar-Raheem</h4>
+              <p>The Bestower of Mercy — Who grants special grace and compassion to believers.</p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الْمَلِكُ</span>
+              <h4>Al-Malik</h4>
+              <p>The Sovereign King — Absolute Ruler and Owner of the heavens and earth.</p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">السَّلَامُ</span>
+              <h4>As-Salam</h4>
+              <p>The Source of Peace — Free from all imperfection and Giver of tranquility.</p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الْعَلِيمُ</span>
+              <h4>Al-Aleem</h4>
+              <p>The All-Knowing — Whose knowledge comprehends every hidden and open matter.</p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الْهَادِي</span>
+              <h4>Al-Hadi</h4>
+              <p>The Guide — Who illuminates hearts and leads seekers to the Straight Path.</p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الْقُدُّوسُ</span>
+              <h4>Al-Quddus</h4>
+              <p>Completely free from any imperfection, flaw, or shortcoming.</p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الْمُؤْمِنُ</span>
+              <h4>Al-Mu'min</h4>
+              <p>The One who illuminates hearts with faith and grants safety and peace.</p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الْمُهَيْمِنُ</span>
+              <h4>Al-Muhaymin</h4>
+              <p> The Ever-Watchful Protector who oversees and preserves all creation. </p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الْعَزِيزُ</span>
+              <h4>Al-Aziz</h4>
+              <p> The All-Powerful and Invincible whom nothing can ever overcome. </p>
+            </div>
+             <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الْخَالِقُ</span>
+              <h4>Al-Khaliq</h4>
+              <p> The One who brings everything into existence from nothing. </p>
+            </div>
+            <div class="asma-card">
+              <span class="asma-arabic" lang="ar" dir="rtl">الْمُصَوِّرُ</span>
+              <h4>Al-Musawwir</h4>
+              <p> The One who gives every creation its unique shape and beauty. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Sunnah & Golden Hadiths of Rasoolullah SAW -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="tag">Prophetic Wisdom</span>
+            <h2>Pearls from the Seerah &amp; Hadith of Rasoolullah (&#65018;)</h2>
+            <p>Authentic teachings of Prophet Muhammad (peace and blessings be upon him) on learning the Quran and noble character.</p>
+          </div>
+
+          <div class="hadith-grid">
+            <article class="hadith-card">
+              <div class="hadith-badge">Virtue of Learning Quran</div>
+              <p class="hadith-arabic" lang="ar" dir="rtl">خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ</p>
+              <blockquote class="hadith-english">
+                "The best among you are those who learn the Quran and teach it."
+              </blockquote>
+              <span class="hadith-source">— Sahih al-Bukhari (5027)</span>
+            </article>
+
+            <article class="hadith-card">
+              <div class="hadith-badge">Reward of Recitation</div>
+              <p class="hadith-arabic" lang="ar" dir="rtl">مَنْ قَرَأَ حَرْفًا مِنْ كِتَابِ اللَّهِ فَلَهُ بِهِ حَسَنَةٌ، وَالْحَسَنَةُ بِعَشْرِ أَمْثَالِهَا</p>
+              <blockquote class="hadith-english">
+                "Whoever recites a single letter from the Book of Allah will receive one good deed, and each good deed is multiplied by ten."
+              </blockquote>
+              <span class="hadith-source">— Jami` at-Tirmidhi (2910)</span>
+            </article>
+
+            <article class="hadith-card">
+              <div class="hadith-badge">Seekers of Knowledge</div>
+              <p class="hadith-arabic" lang="ar" dir="rtl">مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ</p>
+              <blockquote class="hadith-english">
+                "Whoever travels a path in search of knowledge, Allah will make easy for him a path to Paradise."
+              </blockquote>
+              <span class="hadith-source">— Sahih Muslim (2699)</span>
+            </article>
+
+            <article class="hadith-card">
+              <div class="hadith-badge">Prophetic Character</div>
+              <p class="hadith-arabic" lang="ar" dir="rtl">إِنَّمَا بُعِثْتُ لِأُتَمِّمَ مَكَارِمَ الْأَخْلَاقِ</p>
+              <blockquote class="hadith-english">
+                "I was only sent to perfect noble character."
+              </blockquote>
+              <span class="hadith-source">— Al-Adab Al-Mufrad (273)</span>
+            </article>
+          </div>
+
+          <!-- Durood Sharif Banner -->
+          <div class="durood-banner">
+            <span class="durood-label">Send Blessings Upon the Beloved Prophet (&#65018;)</span>
+            <p class="durood-arabic" lang="ar" dir="rtl">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</p>
+            <p class="durood-translation">
+              "O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim; indeed, You are Praiseworthy and Glorious."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Selected Verses of the Holy Quran & Call to Action -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="tag">Words of Guidance</span>
+            <h2>Illuminating Verses from the Holy Quran</h2>
+            <p>Ponder over the timeless message revealed to humanity.</p>
+          </div>
+
+          <div class="ayah-cards-grid">
+            <article class="ayah-card">
+              <div class="ayah-surah">Ayat-ul-Kursi • Surah Al-Baqarah (2:255)</div>
+              <p class="ayah-arabic" lang="ar" dir="rtl">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ</p>
+              <p class="ayah-meaning">
+                "Allah — there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep..."
+              </p>
+            </article>
+
+            <article class="ayah-card">
+              <div class="ayah-surah">Surah Al-Ikhlas (112:1–4)</div>
+              <p class="ayah-arabic" lang="ar" dir="rtl">قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ</p>
+              <p class="ayah-meaning">
+                "Say, 'He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent.'"
+              </p>
+            </article>
+
+            <article class="ayah-card">
+              <div class="ayah-surah">Surah Al-Inshirah (94:5–6)</div>
+              <p class="ayah-arabic" lang="ar" dir="rtl">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا</p>
+              <p class="ayah-meaning">
+                "For indeed, with hardship [will be] ease. Indeed, with hardship [will be] ease."
+              </p>
+            </article>
+          </div>
+
+          <div class="home-cta-box">
+            <h3>Begin Your Journey with the Book of Allah Today</h3>
+            <p>Join students worldwide learning accurate Tajweed, Quran memorization, and Prophetic Sunnah.</p>
+            <div class="home-cta-buttons">
+              <a href="#enroll" class="btn btn-primary nav-trigger" data-target="enroll" data-title="Loading Free Trial Registration...">Book Free Trial Now</a>
+              <a href="#team" class="btn btn-emerald nav-trigger" data-target="team" data-title="Loading Team Page...">Meet Our Scholars</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Our Curriculum</span>
+          <h2>Structured Courses for Every Level</h2>
+          <p>Filter programs tailored for beginners, young learners, and advanced students.</p>
+        </div>
+
+        <div class="filter-buttons" role="group" aria-label="Course filters">
+          <button class="filter-btn active" data-filter="all">All Programs</button>
+          <button class="filter-btn" data-filter="quran">Quran Reading</button>
+          <button class="filter-btn" data-filter="islamic">Islamic Studies</button>
+        </div>
+
+        <div class="courses-grid" id="coursesGrid">
+          <article class="course-card" data-category="quran">
+            <div class="course-icon">&#128214;</div>
+            <h3>Noorani Qaida Foundation</h3>
+            <p>Learn Arabic alphabet pronunciation (Makharij), letter joining, and vowel rules from scratch.</p>
+            <ul>
+              <li>Ideal for kids &amp; beginners</li>
+              <li>Interactive pronunciation drills</li>
+            </ul>
+            <a href="#enroll" class="course-link nav-trigger" data-target="enroll" data-title="Loading Free Trial Registration..." data-course="Noorani Qaida Foundation">Enroll Now &rarr;</a>
+          </article>
+
+          <article class="course-card" data-category="quran">
+            <div class="course-icon">&#127775;</div>
+            <h3>Quran Reading with Tajweed</h3>
+            <p>Master proper articulation, elongation (Madd), and recitation rules to read the Holy Quran fluently.</p>
+            <ul>
+              <li>Step-by-step Tajweed rules</li>
+              <li>Weekly recitation assessments</li>
+            </ul>
+            <a href="#enroll" class="course-link nav-trigger" data-target="enroll" data-title="Loading Free Trial Registration..." data-course="Quran Reading with Tajweed">Enroll Now &rarr;</a>
+          </article>
+
+          <article class="course-card" data-category="quran">
+            <div class="course-icon">&#128332;</div>
+            <h3>Hifz-ul-Quran (Memorization)</h3>
+            <p>Structured daily memorization plans with Sabq, Sabqi, and Manzil revision tracking.</p>
+            <ul>
+              <li>Juz Amma or Full Quran tracks</li>
+              <li>Dedicated Hifz mentors</li>
+            </ul>
+            <a href="#enroll" class="course-link nav-trigger" data-target="enroll" data-title="Loading Free Trial Registration..." data-course="Hifz-ul-Quran">Enroll Now &rarr;</a>
+          </article>
+
+          <article class="course-card" data-category="islamic">
+            <div class="course-icon">&#128331;</div>
+            <h3>Aqeedah &amp; Fiqh Essentials</h3>
+            <p>Understand the Five Pillars of Islam, Salah rulings, purification (Wudu), and daily Sunnah practices.</p>
+            <ul>
+              <li>Practical worship guidance</li>
+              <li>Age-appropriate modules</li>
+            </ul>
+            <a href="#enroll" class="course-link nav-trigger" data-target="enroll" data-title="Loading Free Trial Registration..." data-course="Aqeedah & Fiqh Essentials">Enroll Now &rarr;</a>
+          </article>
+
+          <article class="course-card" data-category="islamic">
+            <div class="course-icon">&#128220;</div>
+            <h3>Seerah &amp; Prophetic Stories</h3>
+            <p>Inspiring lessons from the life of Prophet Muhammad (peace be upon him) and the Prophets.</p>
+            <ul>
+              <li>Character &amp; Adab building</li>
+              <li>Engaging storytelling</li>
+            </ul>
+            <a href="#enroll" class="course-link nav-trigger" data-target="enroll" data-title="Loading Free Trial Registration..." data-course="Seerah & Prophetic Stories">Enroll Now &rarr;</a>
+          </article>
+
+          <article class="course-card" data-category="islamic">
+            <div class="course-icon">&#129330;</div>
+            <h3>Daily Duas &amp; Short Surahs</h3>
+            <p>Memorize essential morning/evening supplications, Salah recitations, and key Hadiths.</p>
+            <ul>
+              <li>Word-by-word meanings</li>
+              <li>Practical daily application</li>
+            </ul>
+            <a href="#enroll" class="course-link nav-trigger" data-target="enroll" data-title="Loading Free Trial Registration..." data-course="Daily Duas & Short Surahs">Enroll Now &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team / Teachers Section -->
+    <section id="team" class="section section-alt page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Qualified Scholars &amp; Tutors</span>
+          <h2>Meet Our Dedicated Teaching Team</h2>
+          <p>Certified Qaris, Huffaz, and Islamic Studies instructors experienced in teaching children and adults.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-photo">
+              <img
+                src="https://images.pexels.com/photos/30938321/pexels-photo-30938321.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Qari Muhammad Usman - Head of Tajweed & Qira'at"
+              />
+            </div>
+            <div class="team-info">
+              <span class="team-role">Head of Tajweed &amp; Qira'at</span>
+              <h3>Qari Muhammad Usman</h3>
+              <p>Ijazah in Hafs 'an 'Asim with 12+ years of experience teaching Tajweed and fluent Quran recitation.</p>
+              <div class="team-badges">
+                <span>Tajweed Specialist</span>
+                <span>12+ Yrs Exp</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-photo">
+              <img
+                src="https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&w=600&q=80"
+                alt="Hafiz Bilal Ahmed - Senior Hifz-ul-Quran Mentor"
+              />
+            </div>
+            <div class="team-info">
+              <span class="team-role">Senior Hifz-ul-Quran Mentor</span>
+              <h3>Hafiz Bilal Ahmed</h3>
+              <p>Specialized in structured Quran memorization (Sabq, Sabqi, Manzil) and Noorani Qaida for young learners.</p>
+              <div class="team-badges">
+                <span>Hifz Mentor</span>
+                <span>Kids &amp; Adults</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-photo">
+              <img
+                src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=600&q=80"
+                alt="Ustadha Amina Siddiqui - Female Quran & Islamic Studies Tutor"
+              />
+            </div>
+            <div class="team-info">
+              <span class="team-role">Female Quran &amp; Islamic Studies Tutor</span>
+              <h3>Ustadha Amina Siddiqui</h3>
+              <p>Dedicated instructor for sisters and children covering Tajweed, Daily Duas, Fiqh, and Seerah.</p>
+              <div class="team-badges">
+                <span>Sisters &amp; Kids</span>
+                <span>Islamic Studies</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quran Gallery Section -->
+    <section id="gallery" class="section page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Visual Reflections</span>
+          <h2>Holy Quran &amp; Sacred Heritage Gallery</h2>
+          <p>Click any image to view in full screen.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=800&q=80"
+              alt="Illuminated pages of the Holy Quran open on a wooden stand"
+            />
+            <figcaption>Illuminated Mushaf on Wooden Rehal</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&w=800&q=80"
+              alt="Close-up of Arabic calligraphy in the Holy Quran"
+            />
+            <figcaption>Tajweed &amp; Recitation Study</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=800&q=80"
+              alt="Peaceful mosque interior with warm light and Quran study area"
+            />
+            <figcaption>Tranquil Learning Environment</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="https://images.pexels.com/photos/30938321/pexels-photo-30938321.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Mosque interior with grand Arabic calligraphy medallions"
+            />
+            <figcaption>Sacred Islamic Architecture &amp; Calligraphy</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timings & Plans -->
+    <section id="schedule" class="section section-alt page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Flexible Learning</span>
+          <h2>Class Schedules &amp; Study Tracks</h2>
+        </div>
+        <div class="table-wrapper">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Track</th>
+                <th>Days per Week</th>
+                <th>Session Duration</th>
+                <th>Mode</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Weekend Islamic School</td>
+                <td>2 Days (Sat &amp; Sun)</td>
+                <td>45 Minutes</td>
+                <td>Online / On-Campus</td>
+              </tr>
+              <tr>
+                <td>Regular Quran &amp; Tajweed</td>
+                <td>3 Days (Mon, Wed, Fri)</td>
+                <td>30 Minutes</td>
+                <td>1-on-1 Live</td>
+              </tr>
+              <tr>
+                <td>Intensive Hifz Program</td>
+                <td>5 Days (Mon – Fri)</td>
+                <td>45 Minutes</td>
+                <td>1-on-1 Live</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section id="enroll" class="section page-section">
+      <div class="container enroll-grid">
+        <div class="enroll-info">
+          <span class="tag">Admission Open</span>
+          <h2>Start With a Free Assessment Class</h2>
+          <p>
+            Fill out the registration form to schedule a complimentary trial session. Clicking submit will automatically open WhatsApp with your details ready to send.
+          </p>
+          <ul class="benefits-list">
+            <li>&#10003; Individual attention for every student</li>
+            <li>&#10003; Dedicated female teachers for sisters &amp; young girls</li>
+            <li>&#10003; Monthly progress report for parents</li>
+          </ul>
+        </div>
+
+        <form class="enroll-form" id="enrollForm">
+          <h3>Student Registration</h3>
+          <div class="form-group">
+            <label for="studentName">Student Full Name *</label>
+            <input type="text" id="studentName" required placeholder="e.g. Abdullah Ahmed" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="studentAge">Age Group *</label>
+              <select id="studentAge" required>
+                <option value="">Select Age</option>
+                <option value="5-8">5 – 8 Years</option>
+                <option value="9-14">9 – 14 Years</option>
+                <option value="15-25">15 – 25 Years</option>
+                <option value="26+">Adult (26+)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="courseSelect">Select Course *</label>
+              <select id="courseSelect" required>
+                <option value="Noorani Qaida Foundation">Noorani Qaida Foundation</option>
+                <option value="Quran Reading with Tajweed">Quran Reading with Tajweed</option>
+                <option value="Hifz-ul-Quran">Hifz-ul-Quran</option>
+                <option value="Aqeedah & Fiqh Essentials">Aqeedah &amp; Fiqh Essentials</option>
+                <option value="Seerah & Prophetic Stories">Seerah &amp; Prophetic Stories</option>
+                <option value="Daily Duas & Short Surahs">Daily Duas &amp; Short Surahs</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email or WhatsApp Number *</label>
+            <input type="text" id="contactEmail" required placeholder="e.g. parent@example.com or +92 300 1234567" />
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send via WhatsApp</button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Details & Social Links Section -->
+    <section id="contact" class="section section-alt page-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Get In Touch</span>
+          <h2>Contact Details &amp; Social Channels</h2>
+          <p>Reach out directly via WhatsApp, phone, email, or connect with us on social media.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">&#128222;</div>
+            <h3>Phone &amp; WhatsApp</h3>
+            <p>Available 24/7 for admissions &amp; class scheduling</p>
+            <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" class="contact-link">
+              +92 300 1234567 (WhatsApp)
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">&#9993;</div>
+            <h3>Email Support</h3>
+            <p>Send us your academic inquiries or syllabus questions</p>
+            <a href="mailto:info@alnooracademy.com" class="contact-link">
+              info@alnooracademy.com
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">&#128205;</div>
+            <h3>Academy Campus</h3>
+            <p>Main Boulevard, Johar Town, Lahore, Pakistan</p>
+            <span class="contact-sub">Online Classes Worldwide (Zoom / Meet)</span>
+          </div>
+        </div>
+
+        <!-- Social Media Bar -->
+        <div class="social-bar">
+          <h3>Follow Al-Noor Academy</h3>
+          <div class="social-links">
+            <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp" aria-label="WhatsApp">
+              WhatsApp
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn facebook" aria-label="Facebook">
+              Facebook
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn youtube" aria-label="YouTube">
+              YouTube
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn instagram" aria-label="Instagram">
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal for Gallery -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+    <img id="lightboxImg" src="" alt="" />
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <h4>Al-Noor Academy</h4>
+        <p>Spreading authentic Quranic recitation and Islamic knowledge worldwide.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home" class="nav-trigger" data-target="home" data-title="Loading Home Page...">Home</a>
+        <a href="#courses" class="nav-trigger" data-target="courses" data-title="Loading Courses Page...">Courses</a>
+        <a href="#team" class="nav-trigger" data-target="team" data-title="Loading Team Page...">Team</a>
+        <a href="#gallery" class="nav-trigger" data-target="gallery" data-title="Loading Quran Gallery...">Gallery</a>
+        <a href="#contact" class="nav-trigger" data-target="contact" data-title="Loading Contact Page...">Contact</a>
+      </div>
+      <p>&copy; <span id="year"></span> Al-Noor Islamic Studies &amp; Quran Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
