@@ -7,7 +7,7 @@ const courseSelect = document.getElementById("courseSelect");
 // Reusable function to show the exact green + Quran Majeed + spinning circle loader
 function triggerSectionTransition(targetId, loadingMessage, selectedCourse = null) {
   // 1. Update the loading heading text dynamically
-  loaderText.textContent = loadingMessage || "Loading Al-Noor Academy...";
+  loaderText.textContent = loadingMessage || "Hassnain Quran Hadith...";
 
   // 2. Show the green preloader overlay immediately
   document.body.classList.add("loading");
