@@ -50,7 +50,7 @@ function triggerSectionTransition(targetId, loadingMessage, selectedCourse = nul
 
 // Initial website load animation
 window.addEventListener("load", () => {
-  loaderText.textContent = "Loading Al-Noor Academy...";
+  loaderText.textContent = "Loading Hassnain Quran Hadith...";
   setTimeout(() => {
     preloader.classList.add("fade-out");
     document.body.classList.remove("loading");
