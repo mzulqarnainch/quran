@@ -843,35 +843,44 @@ main {
 
 /* Social Links */
 .team-socials {
-  display: flex;
+  display: flex !important;
   align-items: center;
-  gap: 0.6rem;
+  gap: 10px;
   margin-top: auto;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  border-top: 1px solid var(--border, #e2e8f0);
 }
 
 .team-badges + .team-socials {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 .team-socials a {
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--emerald-light);
-  color: var(--emerald-dark);
-  text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: var(--emerald-light, #e6f2ee) !important;
+  color: var(--emerald-dark, #0f4c3a) !important;
+  border: 1px solid transparent;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+}
+
+.team-socials a svg {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 .team-socials a:hover {
-  background: var(--emerald-dark);
-  color: var(--white);
-  transform: translateY(-2px);
+  background-color: var(--emerald-dark, #0f4c3a) !important;
+  color: var(--white, #ffffff) !important;
+  border-color: var(--gold, #c59d5f);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(15, 76, 58, 0.18);
 }
 /* Gallery */
 .gallery-grid {
