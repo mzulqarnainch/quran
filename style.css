@@ -775,6 +775,8 @@ main {
 }
 
 .team-card {
+  display: flex;
+  flex-direction: column;
   background: var(--white);
   border-radius: var(--radius);
   overflow: hidden;
@@ -796,6 +798,9 @@ main {
 }
 
 .team-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 1.5rem;
 }
 
@@ -836,6 +841,38 @@ main {
   border-radius: 6px;
 }
 
+/* Social Links */
+.team-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.team-badges + .team-socials {
+  margin-top: 1rem;
+}
+
+.team-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--emerald-light);
+  color: var(--emerald-dark);
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.team-socials a:hover {
+  background: var(--emerald-dark);
+  color: var(--white);
+  transform: translateY(-2px);
+}
 /* Gallery */
 .gallery-grid {
   display: grid;
